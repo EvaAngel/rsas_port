@@ -13,7 +13,7 @@ public class Client {
         List<Ip> ipList = new ArrayList<>();
         //获取文件夹下的所有主机html文件
         List<String> fileList = new ArrayList<>();
-        File file = new File("C:\\Users\\nsfocus-pc\\Desktop\\139_淄博端口扫描_2018_08_09_html\\host");
+        File file = new File("I:\\8.6 绿盟科技正式入职第一月\\8月第二周\\8.14 周二\\绿盟科技网络部IP漏洞导出报告\\151_滨州_2018_08_13_html\\host");
         File[] files = file.listFiles();
         for (int i = 0; i < files.length; i++) {
             if (!files[i].isDirectory()) {

@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class OutputExcel {
-    public static Boolean outputExcel(List<Ip> ipList) {
+    public static Boolean outputExcel(List<Ip> ipList,String outPath) {
         Workbook workbook = new XSSFWorkbook();
         Sheet sheet = workbook.createSheet("0");
         Row row = sheet.createRow(0);
@@ -42,7 +42,7 @@ public class OutputExcel {
 
         workbook.setSheetName(0, "IP资产");
         try {
-            File file = new File("E:\\test.xlsx");
+            File file = new File(outPath);
             FileOutputStream fileoutputStream = new FileOutputStream(file);
             workbook.write(fileoutputStream);
             fileoutputStream.close();
@@ -53,47 +53,4 @@ public class OutputExcel {
         }
     }
 
-    public static void main(String[] args) {
-
-        Port port1 = new Port();
-        port1.setPort("12");
-        port1.setYy_Xieyi("http");
-        Port port2 = new Port();
-        port2.setPort("12");
-        port2.setYy_Xieyi("http");
-        Port port3 = new Port();
-        port3.setPort("12");
-        port3.setYy_Xieyi("http");
-        Port port4 = new Port();
-        port4.setPort("12");
-        port4.setYy_Xieyi("http");
-        List<Port> portList = new ArrayList<>();
-        portList.add(port1);
-        portList.add(port2);
-        portList.add(port3);
-        portList.add(port4);
-        Ip ip = new Ip();
-        ip.setIp("1.1.1.1");
-        ip.setPortList(portList);
-        Port port5 = new Port();
-        port5.setPort("12");
-        port5.setYy_Xieyi("http");
-        Port port6 = new Port();
-        port6.setPort("12");
-        port6.setYy_Xieyi("http");
-        Port port7 = new Port();
-        port7.setPort("12");
-        port7.setYy_Xieyi("http");
-        List<Port> portList2 = new ArrayList<>();
-        portList2.add(port5);
-        portList2.add(port6);
-        portList2.add(port7);
-        Ip ip2 = new Ip();
-        ip2.setIp("2.2.2.2");
-        ip2.setPortList(portList2);
-        List<Ip> ipList = new ArrayList<>();
-        ipList.add(ip);
-        ipList.add(ip2);
-        OutputExcel.outputExcel(ipList);
-    }
 }

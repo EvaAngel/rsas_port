@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="rsas_port:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/rsas_port_jar</output-path>
+    <root id="archive" name="rsas_port.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="F:/intellj/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="rsas_port" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../jar/文件上传相关/poi-3.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../jar/文件上传相关/dom4j-1.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../jar/文件上传相关/poi-ooxml-schemas-3.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../jar/文件上传相关/xbean-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../jar/文件上传相关/poi-ooxml-3.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../jar/文件上传相关/xmlbeans-xmlpublic-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../jar/jsoup-1.11.3.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
